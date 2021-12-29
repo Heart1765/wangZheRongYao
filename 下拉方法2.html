@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #fff;
+        }
+
+        li {
+            list-style: none;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        .w {
+            width: 1200px;
+        }
+
+        header {
+            width: 100%;
+            position: relative;
+        }
+
+        /* 腾讯游戏 */
+        .top {
+            width: 990px;
+            margin: 0 auto;
+            position: relative;
+        }
+
+        .top>ul>li {
+            float: left;
+        }
+
+        /* 左边的logo和qq炫舞 */
+        .top_logoxuan {
+            line-height: 41px;
+            overflow: hidden;
+        }
+
+        .top_logoxuan a {
+            color: #464646;
+            font-size: 14px;
+        }
+
+        /* logo */
+        .top_logoxuan>.logo {
+            width: 145px;
+            height: 41px;
+            background: url(./img/logo.png) top center no-repeat;
+            position: relative;
+            z-index: 99;
+        }
+
+        .top_logoxuan>.logo a {
+            display: block;
+            height: 100%;
+        }
+
+        /* qq炫舞 */
+        .top_logoxuan>.xuan {
+            width: 230px;
+            height: 40px;
+            background: url(./img/xuan.jpg) top center no-repeat;
+            z-index: 2;
+            cursor: pointer;
+        }
+
+        /* 成长守护 */
+        .top_logoxuan>.shou {
+            float: right;
+            width: 265px;
+            position: relative;
+        }
+
+        /* 绿色小圆 */
+        .top_logoxuan>.shou::after {
+            content: "";
+            background: url(./img/title_sprite.png);
+            background-position: -30px 0;
+            width: 30px;
+            height: 30px;
+            position: absolute;
+            top: 5px;
+            left: 5px;
+            cursor: pointer;
+        }
+
+        .top_logoxuan>.shou h4 {
+            font-weight: 400;
+            float: left;
+            height: 41px;
+        }
+
+        .top_logoxuan>.shou h4 a {
+            display: block;
+            height: 100%;
+        }
+
+        .top_logoxuan>.shou h4 a:hover {
+            color: #ff4e00;
+        }
+
+        .top_logoxuan>.shou>.shou1 {
+            padding-left: 33px;
+            margin-right: 20px;
+        }
+
+        /* 放大的qq炫舞 */
+        .top .xuan_fangda {
+            position: absolute;
+            width: 970px;
+            height: 185px;
+            top: 0;
+            left: 9px;
+            display: none;
+            background: url(./img/xuan_fangda.jpg) no-repeat 100% 100%;
+            z-index: 1;
+        }
+
+        /* 王者荣耀 */
+        .w1 {
+            width: 1300px;
+            margin: 0 auto;
+            position: relative;
+        }
+
+        .nav {
+            width: 100%;
+            height: 84px;
+            background-color: rgba(0, 0, 0, 0.6);
+            position: relative;
+        }
+
+        /* 王者荣耀logo */
+        .logo1 {
+            position: absolute;
+            width: 200px;
+            height: 54px;
+            background: url(./img/logo1.png) no-repeat 100% 100%;
+            top: 16px;
+            left: 0;
+            cursor: pointer;
+            /* left: 20px; */
+        }
+
+        /* 中间的游戏资料等 */
+        .game_file {
+            margin-left: 230px;
+            width: 805px;
+            float: left;
+        }
+
+        .game_file>li {
+            float: left;
+            width: 115px;
+            height: 84px;
+            text-align: center;
+            font-size: 18px;
+            cursor: pointer;
+            color: #c9c9dd;
+            position: relative;
+        }
+
+        .game_file>li:hover {
+            background: url(./img/index.png) no-repeat 0 0;
+        }
+
+        .game_file>li:hover span:nth-of-type(1) {
+            background: url(./img/index.png) no-repeat 0 0;
+            color: #e4b653;
+        }
+
+        .game_file>li:hover .s2 {
+            color: #e4b653;
+        }
+
+        .game_file>li>span {
+            display: block;
+        }
+
+        .game_file>li>span:nth-of-type(1) {
+            margin-top: 22px;
+            margin-bottom: 8px;
+        }
+
+        .s2 {
+            font-size: 12px;
+            color: #858792;
+        }
+
+        /* 搜索 */
+        .search {
+            float: left;
+            width: 38px;
+            height: 84px;
+            cursor: pointer;
+            margin-left: 10px;
+            margin-right: 30px;
+        }
+
+        .search img {
+            margin-top: 30px;
+            display: block;
+        }
+
+        /* 登陆 */
+        .login {
+            float: right;
+            width: 182px;
+            margin-top: 20px;
+            cursor: pointer;
+        }
+
+        .login img {
+            display: block;
+            border: 1px solid #d9ad50;
+            border-radius: 50%;
+            float: left;
+            margin-right: 8px;
+        }
+
+        .login h4 {
+            font-weight: 400;
+            font-size: 16px;
+            color: #fff;
+        }
+
+        .login span {
+            font-size: 14px;
+            color: #858792;
+        }
+
+        /* 背景图 */
+        .main {
+            background: url(./img/bg.png) no-repeat top center;
+            height: 1000px;
+            /* border-bottom: 1px solid black; */
+        }
+
+        /* 遮罩 */
+        .zhe {
+            width: 100%;
+            /* height: 282px; */
+            height: 0;
+            background-color: rgba(0, 0, 0, 0.6);
+            position: absolute;
+            top: 84px;
+            left: 0px;
+            overflow: hidden;
+        }
+
+        .olist {
+            padding-top: 15px;
+            width: 842px;
+            margin: 0 auto;
+            overflow: hidden;
+        }
+
+        .drop {
+            float: left;
+            color: #c9c9dd;
+            width: 115px;
+            text-align: center;
+            font-size: 14px;
+        }
+
+        .drop li {
+            padding-bottom: 12px;
+            cursor: pointer;
+        }
+
+        .drop li:hover {
+            text-decoration: underline;
+            color: #d9ad50;
+        }
+    </style>
+    <script src="./js/jquery-3.6.0.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="top">
+            <ul class="top_logoxuan">
+                <!-- 腾讯游戏logo -->
+                <li class="logo"><a href=""></a></li>
+                <!-- qq炫舞 -->
+                <li class="xuan">
+                    <div class="xuan_fangda"></div>
+                </li>
+                <li class="shou">
+                    <h4 class="shou1"><a href="">成长守护平台</a></h4>
+                    <h4 class="pai"><a href="">腾讯游戏排行榜</a></h4>
+                </li>
+            </ul>
+        </div>
+        <div class="main">
+            <!-- 导航栏 -->
+            <div class="nav">
+                <div class="w1">
+                    <!-- 王者荣耀logo -->
+                    <div class="logo1"></div>
+                    <!-- 游戏资料下拉 -->
+                    <ul class="game_file">
+                        <li>
+                            <span>游戏资料</span><span class="s2">DATA</span>
+                        </li>
+                        <li>
+                            <span>内容中心</span><span class="s2">CONTENTS</span>
+                        </li>
+                        <li>
+                            <span>赛事中心</span><span class="s2">MATCH</span>
+                        </li>
+                        <li>
+                            <span>百态王者</span><span class="s2">CULTURE</span>
+                        </li>
+                        <li>
+                            <span>社区互动</span><span class="s2">COMMUNITY</span>
+                        </li>
+                        <li>
+                            <span>玩家支持</span><span class="s2">PLAYER</span>
+                        </li>
+                        <li>
+                            <span>IP新游</span><span class="s2">NEW GAMES</span>
+                        </li>
+                    </ul>
+                    <!-- 搜索 -->
+                    <div class="search">
+                        <img src="./img/nav_search.png" alt="">
+                    </div>
+                    <!-- 欢迎登录 -->
+                    <div class="login">
+                        <img src="./img/hero.png" alt="">
+                        <h4>欢迎登陆</h4>
+                        <span>登陆后查看游戏战绩</span>
+                    </div>
+                </div>
+                <div class="zhe">
+                    <div class="olist">
+                        <ol class="drop">
+                            <li>版本介绍</li>
+                            <li>游戏介绍</li>
+                            <li>英雄资料</li>
+                            <li>爆料站</li>
+                            <li>故事站</li>
+                            <li>游戏壁纸</li>
+                        </ol>
+                        <ol class="drop">
+                            <li>版本介绍</li>
+                            <li>游戏介绍</li>
+                            <li>英雄资料</li>
+                            <li>爆料站</li>
+                            <li>故事站</li>
+                            <li>游戏壁纸</li>
+                        </ol>
+                        <ol class="drop">
+                            <li>版本介绍</li>
+                            <li>游戏介绍</li>
+                            <li>英雄资料</li>
+                            <li>爆料站</li>
+                            <li>故事站</li>
+                            <li>游戏壁纸</li>
+                            <li>游戏壁纸</li>
+                            <li>游戏壁纸</li>
+                        </ol>
+                        <ol class="drop">
+                            <li>版本介绍</li>
+                            <li>游戏介绍</li>
+                            <li>英雄资料</li>
+                            <li>爆料站</li>
+                            <li>故事站</li>
+                            <li>游戏壁纸</li>
+                        </ol>
+                        <ol class="drop">
+                            <li>版本介绍</li>
+                            <li>游戏介绍</li>
+                            <li>英雄资料</li>
+                            <li>爆料站</li>
+                            <li>故事站</li>
+                            <li>游戏壁纸</li>
+                        </ol>
+                        <ol class="drop">
+                            <li>版本介绍</li>
+                            <li>游戏介绍</li>
+                            <li>英雄资料</li>
+                            <li>爆料站</li>
+                            <li>故事站</li>
+                            <li>游戏壁纸</li>
+                        </ol>
+                        <ol class="drop">
+                            <li>版本介绍</li>
+                            <li>游戏介绍</li>
+                            <li>英雄资料</li>
+                            <li>爆料站</li>
+                            <li>故事站</li>
+                            <li>游戏壁纸</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main></main>
+    <footer></footer>
+    <script>
+        $(function () {
+            $(".xuan").mouseover(function () {
+                console.log(1);
+                $(".xuan_fangda").css("display", "block")
+            })
+            $(".xuan").mouseout(function () {
+                console.log(2);
+                $(".xuan_fangda").css("display", "none")
+            })
+            $(".nav").mouseenter(function () {
+                console.log(1);
+                $(".zhe").stop().animate({ "height": "282px" }, 500)
+            })
+            $(".nav").mouseleave(function () {
+                console.log(2);
+                $(".zhe").stop().animate({ "height": "0" }, 500)
+            })
+        })
+    </script>
+</body>
+
+</html>

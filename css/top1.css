@@ -1,0 +1,117 @@
+.w {
+            width: 1200px;
+        }
+
+        header {
+            width: 100%;
+            position: relative;
+        }
+
+        /* 腾讯游戏 */
+        .top {
+            width: 990px;
+            margin: 0 auto;
+            position: relative;
+            z-index: 11;
+            position: relative;
+            z-index: 11;
+        }
+
+        .top>ul {
+            z-index: 11;
+        }
+
+        .top>ul>li {
+            float: left;
+            z-index: 11;
+        }
+
+        /* 左边的logo和qq炫舞 */
+        .top_logoxuan {
+            line-height: 41px;
+            overflow: hidden;
+            /* width: 990px;
+            margin: 0 auto;
+            position: relative;
+            z-index: 11; */
+        }
+
+        .top_logoxuan a {
+            color: #464646;
+            font-size: 14px;
+        }
+
+        /* logo */
+        .top_logoxuan>.logo {
+            width: 145px;
+            height: 41px;
+            background: url(../img/logo.png) top center no-repeat;
+            position: relative;
+            z-index: 99;
+        }
+
+        .top_logoxuan>.logo a {
+            display: block;
+            height: 100%;
+        }
+
+        /* qq炫舞 */
+        .top_logoxuan>.xuan {
+            width: 230px;
+            height: 40px;
+            background: url(../img/xuan.jpg) top center no-repeat;
+            z-index: 9;
+            cursor: pointer;
+        }
+
+        /* 成长守护 */
+        .top_logoxuan>.shou {
+            float: right;
+            width: 265px;
+            position: relative;
+        }
+
+        /* 绿色小圆 */
+        .top_logoxuan>.shou::after {
+            content: "";
+            background: url(../img/title_sprite.png);
+            background-position: -30px 0;
+            width: 30px;
+            height: 30px;
+            position: absolute;
+            top: 5px;
+            left: 5px;
+            cursor: pointer;
+        }
+
+        .top_logoxuan>.shou h4 {
+            font-weight: 400;
+            float: left;
+            height: 41px;
+        }
+
+        .top_logoxuan>.shou h4 a {
+            display: block;
+            height: 100%;
+        }
+
+        .top_logoxuan>.shou h4 a:hover {
+            color: #ff4e00;
+        }
+
+        .top_logoxuan>.shou>.shou1 {
+            padding-left: 33px;
+            margin-right: 20px;
+        }
+
+        /* 放大的qq炫舞 */
+        .top .xuan_fangda {
+            position: absolute;
+            width: 970px;
+            height: 185px;
+            top: 0;
+            left: 9px;
+            display: none;
+            background: url(../img/xuan_fangda.jpg) no-repeat 100% 100%;
+            z-index: 98;
+        }

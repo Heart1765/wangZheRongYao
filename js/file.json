@@ -1,0 +1,186 @@
+{
+    "gameFile": [
+        [
+            {
+                "type": "",
+                "content": "版本介绍"
+            },
+            {
+                "type": "",
+                "content": "游戏介绍"
+            },
+            {
+                "type": "",
+                "content": "英雄资料"
+            },
+            {
+                "type": "n",
+                "content": "爆料站"
+            },
+            {
+                "type": "n",
+                "content": "故事站"
+            },
+            {
+                "type": "",
+                "content": "游戏壁纸"
+            }
+        ],
+        [
+            {
+                "type": "",
+                "content": "攻略中心"
+            },
+            {
+                "type": "",
+                "content": "英雄攻略"
+            },
+            {
+                "type": "",
+                "content": "视频中心"
+            },
+            {
+                "type": "n",
+                "content": "开放素材库"
+            },
+            {
+                "type": "",
+                "content": "王者视角"
+            },
+            {
+                "type": "",
+                "content": "作者入驻"
+            },
+            {
+                "type": "",
+                "content": "媒体入驻"
+            }
+        ],
+        [
+            {
+                "type": "h",
+                "content": "世界冠军杯"
+            },
+            {
+                "type": "h",
+                "content": "KPL"
+            },
+            {
+                "type": "h",
+                "content": "全国大赛"
+            },
+            {
+                "type": "",
+                "content": "女子公开赛"
+            },
+            {
+                "type": "n",
+                "content": "K甲联盟"
+            },
+            {
+                "type": "",
+                "content": "高校赛"
+            },
+            {
+                "type": "",
+                "content": "全民赛"
+            },
+            {
+                "type": "n",
+                "content": "赛事数据"
+            }
+        ],
+        [
+            {
+                "type": "",
+                "content": "荣耀·传承"
+            },
+            {
+                "type": "",
+                "content": "王者文化站"
+            },
+            {
+                "type": "",
+                "content": "万千世界"
+            },
+            {
+                "type": "",
+                "content": "星光殿堂"
+            },
+            {
+                "type": "",
+                "content": "商户特权"
+            },
+            {
+                "type": "n",
+                "content": "IP共创计划"
+            }
+        ],
+        [
+            {
+                "type": "n",
+                "content": "创意互动营"
+            },
+            {
+                "type": "h",
+                "content": "王者营地"
+            },
+            {
+                "type": "",
+                "content": "手Q部落"
+            },
+            {
+                "type": "",
+                "content": "微信圈子"
+            },
+            {
+                "type": "",
+                "content": "官方微博"
+            },
+            {
+                "type": "",
+                "content": "微信公众号"
+            },
+            {
+                "type": "",
+                "content": "手Q订阅号"
+            }
+        ],
+        [
+            {
+                "type": "",
+                "content": "腾讯游戏防沉迷"
+            },
+            {
+                "type": "o",
+                "content": "成长守护平台"
+            },
+            {
+                "type": "",
+                "content": "对局环境情报站"
+            },
+            {
+                "type": "",
+                "content": "客服专区"
+            },
+            {
+                "type": "n",
+                "content": "礼包兑换"
+            },
+            {
+                "type": "",
+                "content": "自助服务"
+            }
+        ],
+        [
+            {
+                "type": "n",
+                "content": "代号·破晓"
+            },
+            {
+                "type": "n",
+                "content": "代号·启程"
+            }
+        ]
+    ]
+}
